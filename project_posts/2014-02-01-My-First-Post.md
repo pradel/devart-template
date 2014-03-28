@@ -4,6 +4,6 @@ It's the same for Vine, for the time being there no API available.
 
 Our disposal will evolve with the API updates of the main social networks and their streaming features.
 
-![Draft](../project_images/draft.jpg?raw=true "Draft")
+![Draft](../project_images/draft1.jpg?raw=true "Draft")
 
 ![Draft](../project_images/draft2.jpg?raw=true "Draft")
