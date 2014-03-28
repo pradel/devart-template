@@ -1,33 +1,49 @@
-# Project Title
-Insert the name of your project
+# Eternal Sunset
 
 ## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+- Léo Pradel [Github account](https://github.com/pradel "Github account")
+- Frédéric Daubagna
 
 ## Description
 Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
 
 ## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
-
-[Example Link](http://www.google.com "Example Link")
+[Heroku App](http://eternal-sunset.herokuapp.com/ "Heroku App")
 
 ## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
+Server side
 ```
-function test() {
-  console.log("Printing a test");
-}
-```
-## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
+// instantiate public stream
+var streamTwitter = T.stream('statuses/filter', { track: '#sunset' });
 
-[Example Link](http://www.google.com "Example Link")
+streamTwitter.on('tweet', function (tweet) {
+    // if is an image and not a retweet 
+    if (tweet && tweet.retweeted_status == null && tweet.entities != null && tweet.entities.media != null && tweet.entities.media[0].media_url != null) {
+        io.sockets.emit('new:tweet', {image_url: tweet.entities.media[0].media_url});
+    }
+});
+```
+Client side
+```
+.controller('MainCtrl', function ($scope, mySocket, boxFactory) {
+        $scope.boxs = boxFactory.getBoxs();
+        // when receive a new socket put in wall
+        mySocket.on('new:tweet', function(tweet) {
+            boxFactory.addTweet(tweet);
+        });
+    });
+```
+
+## Links to External Libraries
+Nodejs [Node js](http://nodejs.org/ "Node js")
+Express [Express](http://expressjs.com/ "Express")
+SocketIO [SocketIO](http://socket.io/ "SocketIO")
+Twit [Twit](https://github.com/ttezel/twit "Twit")
+Instagram node lib [Instagram-node-lib](https://github.com/mckelvey/instagram-node-lib "Instagram-node-lib")
+AngularJS [AngularJS](http://angularjs.org/ "AngularJS")
+Jquery [Jquery](http://jquery.com/ "Jquery")
+Google Maps Api [google-maps](https://developers.google.com/maps/ "google-maps")
+Angular-socket-io [angular-socket-io](https://github.com/btford/angular-socket-io "angular-socket-io")
 
 ## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
-
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
-
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+![Mapping](project_images/mapping.jpg?raw=true "Mappin")
