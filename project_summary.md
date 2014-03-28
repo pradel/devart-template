@@ -5,7 +5,13 @@
 - Frédéric Daubagna
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+Observing the Twitter timeline in Paris we have seen the sun setting in real time close to the Arc de Triomphe ... Reflecting some more, it appeard obvious that our solar star was going down everywhere on earth. The sun never lies down, the earth spins on it axis and this explains why we have the feeling that the sun is setting down.
+This is the proccess wich led me to the idea of watching a permanent sunset - Eternal Sunset - on my TV.
+
+The social networks become messengers of this interaction between men and this perpetual movement.
+
+Eternal Sunset is a collaborative work evolving with every minute rotations of earth, and the works evolves constantly.
+We honor the solar system in the bosom of wich we are citizens.
 
 ## Link to Prototype
 [Heroku App](http://eternal-sunset.herokuapp.com/ "Heroku App")
