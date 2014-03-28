@@ -41,8 +41,8 @@ SocketIO [SocketIO](http://socket.io/ "SocketIO")
 Twit [Twit](https://github.com/ttezel/twit "Twit")
 Instagram node lib [Instagram-node-lib](https://github.com/mckelvey/instagram-node-lib "Instagram-node-lib")
 AngularJS [AngularJS](http://angularjs.org/ "AngularJS")
-Jquery [Jquery](http://jquery.com/ "Jquery")
-Google Maps Api [google-maps](https://developers.google.com/maps/ "google-maps")
+jQuery [jQuery](http://jquery.com/ "jQuery")
+Google Maps API [google-maps](https://developers.google.com/maps/ "google-maps")
 Angular-socket-io [angular-socket-io](https://github.com/btford/angular-socket-io "angular-socket-io")
 
 ## Images & Videos
