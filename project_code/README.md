@@ -2,9 +2,12 @@
 
 ## Installation
 
-Create an application at [Twitter developpers](https://dev.twitter.com/ "Twitter developpers")
-Create an application at [Instagram developpers](http://instagram.com/developer/ "Instagram developpers")
+Create an application at [Twitter developpers](https://dev.twitter.com/ "Twitter developpers").
+
+Create an application at [Instagram developpers](http://instagram.com/developer/ "Instagram developpers").
+
 Download the git repository.
+
 Run
 ```
 npm install

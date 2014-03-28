@@ -1,5 +1,5 @@
-Insert a description to describe your update to document your creative process. The Commissioned Interactive Artists will be doing the same so you can reference their Project Posts.
+At first, one must seek images on the social networks. After having succeeded in using the realtime streaming API of Tweeter, we have tried the Instagram API. After days of tests, we could'nt gather coherent data wich would turn out to be stable.
 
-![Example Image](../project_images/cover.jpg?raw=true "Example Image")
+It's the same for Vine, for the time being there no API available.
 
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+Our disposal will evolve with the API updates of the main social networks and their streaming features.
