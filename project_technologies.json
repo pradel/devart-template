@@ -1,16 +1,15 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
-        ],
-        "platforms": [
-            "insert platforms"
+            "twitter",
+            "instagram",
+            "maps"
         ],
         "toolkits": [
-            "insert toolkits"
+            "jquery",
+            "socketio",
+            "nodejs",
+            "angularjs"
         ]
-    },
-    "themes": [
-        "insert themes"
-    ]
+    }
 }
